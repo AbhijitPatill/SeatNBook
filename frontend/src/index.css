@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+body {
+  background-color: #17140F;
+  color: #F7F3E8;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@theme {
+  --color-bg: #17140F;
+  --color-panel: #211E17;
+  --color-panel2: #2A261C;
+  --color-border: #3D3826;
+  --color-gold: #F0B429;
+  --color-gold-dim: #8C6A1B;
+  --color-teal: #2DD4BF;
+  --color-teal-dim: #1B7A6E;
+  --color-red: #E14F5A;
+  --color-green: #4FAF6D;
+  --color-ivory: #F7F3E8;
+  --color-muted: #ADA890;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+@keyframes bulbGlow {
+  0%, 100% {
+    background-color: var(--color-gold-dim);
+    box-shadow: none;
+  }
+  50% {
+    background-color: var(--color-gold);
+    box-shadow: 0 0 6px 1px rgba(240, 180, 41, 0.7);
+  }
+}
+
+.bulb {
+  animation: bulbGlow 2.4s ease-in-out infinite;
+}
